@@ -8,13 +8,15 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
-   scaffoldBackgroundColor: TColors.lightColor,
+    fontFamily: 'Rubik',
+    scaffoldBackgroundColor: TColors.lightColor,
     textTheme: TTextTheme.lightTextTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.dark,
+    fontFamily: 'Rubik',
     scaffoldBackgroundColor: TColors.darkColor,
     textTheme: TTextTheme.darkTextTheme,
   );

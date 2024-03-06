@@ -27,19 +27,21 @@ class AlertDialogView extends StatefulWidget {
     this.index,
   }) : super(key: key);
 
-  
-
   @override
   State<AlertDialogView> createState() => _AlertDialogViewState();
 }
 
-
 class _AlertDialogViewState extends State<AlertDialogView> {
   TextEditingController controller = TextEditingController();
+  bool isButtonEnabled = true;
 
   @override
   void initState() {
-    // TODO: implement initState
+    controller.addListener(() {
+      setState(() {
+        isButtonEnabled = controller.text.isEmpty;
+      });
+    });
     super.initState();
   }
 
@@ -81,16 +83,17 @@ class _AlertDialogViewState extends State<AlertDialogView> {
             actions: [
               const CustomTextButton(),
               CustomFilledButton(
-                onPressed: () {
-                  Hive.box<Dhikr>(keyHiveDhikrsBox).add(
-                    Dhikr(
-                      counter: counterCubit.state.count,
-                      title: controller.text,
-                      date: DateTime.now(),
-                    ),
-                  );
-                  context.pop();
-                },
+                onPressed:controller.text.isEmpty ? null
+                    : () {
+                        Hive.box<Dhikr>(keyHiveDhikrsBox).add(
+                          Dhikr(
+                            counter: counterCubit.state.count,
+                            title: controller.text,
+                            date: DateTime.now(),
+                          ),
+                        );
+                        context.pop();
+                      },
                 backgroundColor: TColors.buttonColorBlue,
                 foregroundColor: TColors.textColorWhite,
                 textButton: 'Add',
@@ -122,7 +125,7 @@ class _AlertDialogViewState extends State<AlertDialogView> {
                 backgroundColor: TColors.buttonColorBlue,
                 foregroundColor: TColors.textColorWhite,
                 textButton: 'Save',
-                onPressed: () {
+                onPressed: controller.text.isEmpty ? null : () {
                   hiveCibit.editDhikr(widget.index, controller.text);
                   context.pop();
                 },

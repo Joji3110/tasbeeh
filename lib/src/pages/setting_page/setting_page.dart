@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_tas/src/pages/setting_page/wiggets/interface.dart';
 import 'package:flutter_app_tas/src/utils/constants/color.dart';
+import 'package:flutter_app_tas/src/utils/constants/text.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';

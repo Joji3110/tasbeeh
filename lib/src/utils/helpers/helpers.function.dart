@@ -1,9 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_tas/src/models/dhikr.dart';
 
-import 'package:flutter_app_tas/src/pages/setting_page/wiggets/alert.dart';
+import 'package:flutter_app_tas/src/pages/widgets/alert.dart';
 import 'package:flutter_app_tas/src/pages/widgets/show_bottom_sheet.dart';
 import 'package:flutter_app_tas/src/utils/constants/color.dart';
+import 'package:flutter_app_tas/src/utils/constants/text.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class THelperFunctions {
@@ -45,5 +47,14 @@ class THelperFunctions {
             box: box,
           );
         });
+  }
+
+  static void showSnackBar(BuildContext context, String name) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: TColors.buttonColorBlue,
+        content: Text(name.tr(), style: const TextStyle(color: Colors.white)),
+      ),
+    );
   }
 }

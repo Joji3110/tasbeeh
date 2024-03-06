@@ -3,7 +3,7 @@ Last Saved Dhikir,Last Saved Dhikir,Последние сохраненные З
 Empty,Empty,Здесь пока ничего нет
 erroe meassge,erroe meassge,сообщение об ошибке
 Dhikir,Dhikir,Зикр
-Saved Dhikir,Saved Dhikir,Сохранить Зикр
+Saved Dhikir,Saved Dhikir,Сохраненный Зикр
 Activity,Activity,Активность
 Saved,Saved,Сохраненные
 SubhanAllah,SubhanAllah,СубханАллах
@@ -20,8 +20,6 @@ Delete,Delete,Удалить
 Save,Save,Сохранить
 Interface,Interface,Интерфейс
 Theme design,Theme design,Тема оформления
-Select a theme,Select a theme,Выберите тему
-Select a Language,Select a Language,Выберите язык
 Language,Language,Язык
 Light,Light,Светлая
 Dark,Dark,Тёмная
@@ -29,3 +27,19 @@ System,System,Системная
 Settings,Settings,Настройки
 Russian,Russian,Русский
 English,English,Английский
+Hold to delete the entry,Hold to delete the entry!,Удерживайте чтобы удалить запись!
+Press twice to reset, Press twice to reset,Нажмите два раза чтобы сбросить
+Top Panel,Top Panel,Топ Панель
+The panel serve to switch between Activity and Saved where in Saved you can view saved records',The panel serve to switch between Activity and Saved where in Saved you can view saved records,Панель служить для переключения между Активность и Сохраненные где в Сохраненные  можете посмотреть сохраненные записи
+Settings screen,Settings screen,Экран настроек
+Pressing this button takes you to the setup screen,Pressing this button takes you to the setup screen,Нажимаю на эту кнопку вы переходите в экран настройки
+Counter Panel,Counter Panel,Счетчик Панель
+Dhikr Prayer Panel If you swipe to the right you will have access to the Dhikr Panel for namaz,Dhikr Prayer Panel If you swipe to the right you will have access to the Dhikr Panel for namaz,Панель для молитвы зикра При свайпе направо вам будет доступно Панель зикр для намаза
+Dhikr reduction button,Dhikr reduction button,Кнопка уменьшения Зикра'
+Dhikr reduction button function if you accidentally click on the Dhikr addition you can reduce the amount of Dhikr,Dhikr reduction button function if you accidentally click on the Dhikr addition you can reduce the amount of Dhikr,Функция кнопки уменьшения зикра если вы случайно нажали на прибавления зикра то можете уменьшит количество зикра
+Dhikr reset button,Dhikr reset button,Кнопка сброса Зикра
+The function of the button is to reset the dhikr to zero Be careful when using this button,The function of the button is to reset the dhikr to zero Be careful when using this button,Функция кнопки сброс зикра до нуля Будтье осторожны с использванием этой кнопки!
+Dhikr magnification button,Dhikr magnification button,Кнопка увеличения Зикра
+Increase dhikr button function by pressing the button you increase the amount of dhikr,Increase dhikr button function by pressing the button you increase the amount of dhikr,Функция кнопки увеличения зикра нажимаю на кнопку вы увелечиваете количество зикра
+Dhikr is save button,Dhikr is save button,Кнопка сохранения Зикра
+Dhikr saving function if you have reached a certain amount of dhikr and want to reset you can save and reset the dhikr,Dhikr saving function if you have reached a certain amount of dhikr and want to reset you can save and reset the dhikr,Функция кноки сохранения зикра если вы дошли до определенного количества зикра и хотите сбросить можете сохранить и сбросить зикр

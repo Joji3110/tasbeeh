@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_tas/src/cubit/counter_cubit_cubit.dart';
 import 'package:flutter_app_tas/src/pages/widgets/container_buttton.dart';
 import 'package:flutter_app_tas/src/utils/constants/color.dart';
+import 'package:flutter_app_tas/src/utils/constants/text.dart';
 import 'package:flutter_app_tas/src/utils/helpers/helpers.function.dart';
 import 'package:flutter_app_tas/src/utils/keys.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -29,12 +30,14 @@ class Tasbeah extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
+                    key: decrementButtonKey,
                     onTap: () => counterCubit.updateCounterByIndex(1),
                     child: const ContainerGestureWidget(
                       image: 'assets/images/decrement.png',
                     ),
                   ),
                   GestureDetector(
+                    key: incrementButtonKey,
                     onTap: () => counterCubit.updateCounterByIndex(0),
                     child: Container(
                       width: 154,
@@ -81,7 +84,10 @@ class Tasbeah extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () => counterCubit.updateCounterByIndex(2),
+                    key: resetButtonKey,
+                    onDoubleTap: () => counterCubit.updateCounterByIndex(2),
+                    onTap: () => THelperFunctions.showSnackBar(
+                        context, TText.textSnackBarReset),
                     child: const ContainerGestureWidget(
                       image: 'assets/images/vector.png',
                     ),
@@ -90,6 +96,7 @@ class Tasbeah extends StatelessWidget {
               ),
             ),
             GestureDetector(
+              key: saveButtonKey,
               onTap: () => THelperFunctions.showDialogAlert(
                   contex: context, indexDialog: 0),
               child: GestureDetector(

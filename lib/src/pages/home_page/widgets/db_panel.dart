@@ -17,7 +17,7 @@ class DbPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        key: namazCounterPanelKey,
+        key: dbPanelKey,
         padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
         decoration: BoxDecoration(
           color: THelperFunctions.getContainerColor(context),

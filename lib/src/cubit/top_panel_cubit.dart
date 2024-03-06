@@ -39,13 +39,17 @@ class TopPanelCubit extends Cubit<TopPanelState> {
     tutorialCoachMark = TutorialCoachMark(
       targets: addTargetPage(
         panelName: panelNameKey,
-        settingPage: settingPage,
+        settingPage: settingPageKey,
         counterPanelKey: counterPanelKey,
-        namazcounterPanelKey: namazCounterPanelKey,
+        incrementButtonKey: incrementButtonKey,
+        decrementButtonKey: decrementButtonKey,
+        resetButtonKey: resetButtonKey,
+        saveButtonKey: saveButtonKey,
       ),
       colorShadow: TColors.buttonColorLightBlue,
       paddingFocus: 10,
       hideSkip: true,
+      textSkip: 'прос',
       onFinish: () {
         setTutorialShown();
       },

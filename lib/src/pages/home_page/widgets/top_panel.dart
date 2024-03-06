@@ -19,8 +19,6 @@ class TopPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final panelCubit = context.watch<TopPanelCubit>();
 
-    
-
     return Padding(
       padding: const EdgeInsets.only(bottom: 20),
       child: Row(
@@ -71,7 +69,7 @@ class TopPanel extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            key: settingPage,
+            key: settingPageKey,
             onTap: () => context.go('/settings'),
             child: Container(
               width: 54,
